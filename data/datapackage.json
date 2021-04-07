@@ -1,0 +1,73 @@
+{
+  "title": "Content changes",
+  "description": "This is an list of content changes for selected NHS and government web pages related to coronavirus (COVID-19) products and services.",
+  "sources": [
+    {
+      "title": "GOV.UK",
+      "web": "https://gov.uk"
+    },
+    {
+      "title": "NHS.UK",
+      "web": "https://nhs.uk"
+    },
+    {
+      "title": "COVID-19 app support",
+      "web": "https://www.covid19.nhs.uk"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "OGL-UK-3.0",
+      "path": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "title": "Open Government Licence v 3.0"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "NHS Test and Trace",
+      "path": "https://www.covid19.nhs.uk",
+      "role": "maintainer"
+    }
+  ],
+  "resources": [
+    {
+      "name": "content-pages",
+      "title": "Covid-19 related web pages",
+      "mediatype": "text/csv",
+      "description": "URLs of major Covid-19 web pages in the UK",
+      "path": "content-pages.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "created",
+            "type": "string"
+          }
+        ],
+        "primaryKey": "id",
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8"
+    }
+  ],
+  "update_frequency": "continuously",
+  "created": "2021-03-29",
+  "updated": null
+}
