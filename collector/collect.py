@@ -1,12 +1,14 @@
-import csv
 import os
 import pathlib
 from urllib.parse import urljoin
+from datetime import datetime
 
 import fire
 import requests
 from bs4 import BeautifulSoup
 from frictionless import Package
+
+from collector.tools import content_updated
 
 
 class Collect:
@@ -56,8 +58,13 @@ class Collect:
 
                 html = soup.prettify()
                 out = os.path.join(base_dir, "collected", f"{row['id']}.html")
+                updated = content_updated(out, html)
                 with open(out, "w") as html_file:
                     html_file.write(html)
+                if updated:
+                    package.update(updated=datetime.now().isoformat())
+                    package.to_json(data_file)
+
             except requests.HTTPError as e:
                 print(f"Error getting {row['url']}")
                 print(e)
