@@ -64,10 +64,16 @@
       "scheme": "file",
       "format": "csv",
       "hashing": "md5",
-      "encoding": "utf-8"
+      "encoding": "utf-8",
+      "stats": {
+        "hash": "13ad400a9756c4dbe4436d511544c44d",
+        "bytes": 186,
+        "fields": 4,
+        "rows": 1
+      }
     }
   ],
   "update_frequency": "continuously",
   "created": "2021-03-29",
-  "updated": null
+  "updated": "2021-04-09T13:26:01.027294"
 }
