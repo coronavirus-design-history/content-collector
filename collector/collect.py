@@ -36,11 +36,15 @@ class Collect:
 
                 # remove meta tags apart from encoding
                 for m in soup.find_all("meta"):
-                    if (
-                        m.get("charset") is None
-                        and m.get("content") != "text/html; charset=utf-8"
-                    ):
-                        m.decompose()
+                    try:
+                        if (
+                            m is not None
+                            and m.get("charset") is None
+                            and m.get("content") != "text/html; charset=utf-8"
+                        ):
+                            m.decompose()
+                    except Exception as e:
+                        print(e)
 
                 # gov.uk page that was tested had a specific aria attr
                 # with dynamic id attached which changes and can be ignored for diffs
