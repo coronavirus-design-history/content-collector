@@ -25,7 +25,7 @@
   <link href="https://www.gov.uk/assets/static/core-layout-804ca2beae94a714f3ac14b183c5e4b14e881e78d0afb13d1e5a627276d6f0e6.css" media="screen" rel="stylesheet"/>
   <!--[if lte IE 8]><link rel="stylesheet" media="screen" href="https://www.gov.uk/assets/static/core-layout-ie8-7eff654a88e7b8cacb98b9fbe557311641edd39715d36ea412ccd77695a77bde.css" /><script>var ieVersion = 8;</script><![endif]-->
   <link href="https://www.gov.uk/assets/static/core-layout-print-75b7a1f59d04944e809a8badafce5e00554e3d54cb789f013e2b96f938d130de.css" media="print" rel="stylesheet"/>
-  <link href="https://www.gov.uk/assets/government-frontend/application-b659169f756864a2cb8b46595876898981080233374a3d37a16a43e14fe1e1a9.css" media="screen" rel="stylesheet"/>
+  <link href="https://www.gov.uk/assets/government-frontend/application-2f8c9cf2741de9850466dfbb5601128ee6e8fca7fd53b5c517852094a1b6ac1f.css" media="screen" rel="stylesheet"/>
   <link href="https://www.gov.uk/assets/government-frontend/print-c2084fed4e20e20e1fcd78d50bad0d1e402d912e17ee9aa5a3c1dce1fa61dee3.css" media="print" rel="stylesheet"/>
   <link href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do" rel="canonical"/>
  </head>
@@ -2222,34 +2222,16 @@ Please tell us what format you need. It will help us if you say what assistive t
      </div>
      <div class="govuk-grid-column-one-third">
       <div class="gem-c-contextual-sidebar">
-       <a aria-label="Brexit campaign slogan, Check, Change, Go. Check what you need to do" class="govuk-link gem-c-contextual-sidebar__brexit-cta" data-module="gem-track-click" data-track-action="1.0 Transition" data-track-category="relatedLinkClicked" data-track-dimension="Check what you need to do" data-track-dimension-index="29" data-track-label="/transition" href="/transition" lang="en">
+       <div class="gem-c-contextual-sidebar__brexit-cta">
         <h2 class="gem-c-contextual-sidebar__brexit-heading govuk-heading-s">
          Brexit
         </h2>
-        <ul class="govuk-list gem-c-contextual-sidebar__take-action-traffic-lights">
-         <li>
-          <img alt="" class="gem-c-contextual-sidebar__take-action-traffic-lists-icon" src="/assets/government-frontend/govuk_publishing_components/take-action-red-5117cea61725753ad21e17234e1d12f5605c1ab8df1eab37bd7d557d200a5006.svg"/>
-          <span class="gem-c-contextual-sidebar__take-action-traffic-lists-text">
-           Check
-          </span>
-         </li>
-         <li>
-          <img alt="" class="gem-c-contextual-sidebar__take-action-traffic-lists-icon" src="/assets/government-frontend/govuk_publishing_components/take-action-amber-ed37d78dd940d181c13d2689c7ca16a10891d89e5d278eef21e0e0001fb5a477.svg"/>
-          <span class="gem-c-contextual-sidebar__take-action-traffic-lists-text">
-           Change
-          </span>
-         </li>
-         <li>
-          <img alt="" class="gem-c-contextual-sidebar__take-action-traffic-lists-icon" src="/assets/government-frontend/govuk_publishing_components/take-action-green-201c5dfb37cd72eb3603b1afe36c913fecfda46ecb6221f1ed8c59708bc103e0.svg"/>
-          <span class="gem-c-contextual-sidebar__take-action-traffic-lists-text">
-           Go
-          </span>
-         </li>
-        </ul>
-        <p class="gem-c-contextual-sidebar__brexit-text">
-         Check what you need to do
+        <p class="gem-c-contextual-sidebar__brexit-text govuk-body">
+         <a class="govuk-link" data-module="gem-track-click" data-track-action="1.0 Transition" data-track-category="relatedLinkClicked" data-track-dimension="Check what you need to do" data-track-dimension-index="29" data-track-label="/transition" href="/transition" lang="en">
+          Check what you need to do
+         </a>
         </p>
-       </a>
+       </div>
       </div>
      </div>
     </div>
@@ -2258,12 +2240,12 @@ Please tell us what format you need. It will help us if you say what assistive t
       <div class="gem-c-contextual-footer">
        <div class="gem-c-related-navigation">
         <nav class="gem-c-related-navigation__nav-section" data-module="gem-toggle" role="navigation">
-         <h2 class="gem-c-related-navigation__sub-heading govuk-link gem-c-related-navigation__sub-heading--footer" data-track-count="footerRelatedItemSection">
+         <h2 class="gem-c-related-navigation__sub-heading gem-c-related-navigation__sub-heading--footer" data-track-count="footerRelatedItemSection">
           Explore the topic
          </h2>
          <ul class="gem-c-related-navigation__link-list" data-module="gem-track-click">
           <li class="gem-c-related-navigation__link">
-           <a class="gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer" data-track-action="1.1 Explore the topic" data-track-category="relatedLinkClicked" data-track-label="/coronavirus-taxon" data-track-options='{"dimension28":"1","dimension29":"Coronavirus (COVID-19)"}' href="/coronavirus-taxon">
+           <a class="govuk-link govuk-link gem-c-related-navigation__section-link govuk-link gem-c-related-navigation__section-link--footer" data-track-action="1.1 Explore the topic" data-track-category="relatedLinkClicked" data-track-label="/coronavirus-taxon" data-track-options='{"dimension28":"1","dimension29":"Coronavirus (COVID-19)"}' href="/coronavirus-taxon">
             Coronavirus (COVID-19)
            </a>
           </li>
@@ -2308,7 +2290,7 @@ Please tell us what format you need. It will help us if you say what assistive t
      </div>
      <div class="gem-c-feedback__prompt-questions gem-c-feedback__prompt-questions--something-is-wrong js-prompt-questions">
       <button aria-controls="something-is-wrong" aria-expanded="false" class="govuk-button gem-c-feedback__prompt-link js-toggle-form js-something-is-wrong" data-track-action="GOV-UK Open Form" data-track-category="Onsite Feedback">
-       There is something wrong with this page
+       Report a problem with this page
       </button>
      </div>
     </div>
